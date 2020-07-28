@@ -6,15 +6,16 @@
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="css/main.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -27,32 +28,33 @@
   </head>
   <body>
     <main>
-      <section>
-        <h1>
+      <section class="hero-section">
+        <img src="images/logo.svg" alt="page logo" />
+        <h1 class="hero-title">
           A history of everything you copy
         </h1>
-        <p>
+        <p class="hero-text-description">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+        <div class="hero-buttons">
+          <button class="button-1">Download for iOS</button>
+          <button class="button-2">Download for Mac</button>
         </div>
       </section>
 
-      <section>
-        <h2>
+      <section class="feature-section">
+        <h2 class="section-title">
           Keep track of your snippets
         </h2>
-        <p>
+        <p class="section-description">
           Clipboard instantly stores any item you copy in the cloud, meaning you
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <div>
+        <div class="feature-section-content">
           <img src="images/image-computer.png" alt="imac screen" />
-          <div>
+          <div class="feature-list-content">
             <div>
               <h3>
                 Quick Search
@@ -83,11 +85,11 @@
         </div>
       </section>
 
-      <section>
-        <h2>
+      <section class="devices-section">
+        <h2 class="section-title">
           Access Clipboard anywhere
         </h2>
-        <p>
+        <p class="section-description">
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
@@ -96,16 +98,16 @@
         </div>
       </section>
 
-      <section>
-        <h2>
+      <section class="functions-section">
+        <h2 class="section-title">
           Supercharge your workflow
         </h2>
-        <p>
+        <p class="section-description">
           We’ve got the tools to boost your productivity.
         </p>
-        <div>
+        <div class="functions-section-content">
           <div>
-            <span>icon1</span>
+            <span class="icon1"></span>
             <h3>Create blacklists</h3>
             <p>
               Ensure sensitive information never makes its way to your clipboard
@@ -113,14 +115,14 @@
             </p>
           </div>
           <div>
-            <span>icon2</span>
+            <span class="icon2"></span>
             <h3>Plain text snippets</h3>
             <p>
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </div>
           <div>
-            <span>icon3</span>
+            <span class="icon3"></span>
             <h3>Sneak preview</h3>
             <p>
               Quick preview of all snippets on your Clipboard for easy access.
@@ -129,13 +131,13 @@
         </div>
       </section>
 
-      <section></section>
+      <section class="clients-section"></section>
 
-      <section>
-        <h2>
+      <section class="download-section">
+        <h2 class="section-title">
           Clipboard for iOS and Mac OS
         </h2>
-        <p>
+        <p class="section-description">
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>

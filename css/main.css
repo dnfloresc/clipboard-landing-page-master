@@ -1,5 +1,197 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+}
+
+/*----------------------------------Hero section----*/
+.hero-section {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero-section img {
+  width: 100px;
+}
+
+.hero-title {
+  color: #4c545d;
+  font-size: 2.5em;
+  padding-top: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero-text-description {
+  color: #9fabb2;
+  font-size: 1em;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 1em 0 2.5em;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+}
+
+.button-1,
+.button-2 {
+  padding: 10px 25px;
+  border-radius: 20px;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+}
+
+.button-1 {
+  background-color: #26baa4;
+  box-shadow: 1px 2px #22a08d;
+}
+
+.button-2 {
+  background-color: #6173ff;
+  box-shadow: 1px 2px #4b60ff;
+}
+
+/*----------------------------------Feature section----*/
+.feature-section .device-section {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  color: #4c545d;
+  font-size: 2em;
+  padding-top: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-description {
+  color: #9fabb2;
+  font-size: 0.95em;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding: 1em 0 2.5em;
+}
+
+.feature-section-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 1em 0 3.5em;
+}
+
+.feature-section-content img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0;
+}
+
+.feature-section-content .feature-list-content {
+  max-width: 400px;
+}
+
+.feature-list-content {
+  padding-top: 2.5em;
+}
+
+.feature-list-content div > h3 {
+  font-size: 1.5em;
+  color: #4c545d;
+  padding-bottom: 0.5em;
+}
+
+.feature-list-content div > p {
+  font-size: 1em;
+  color: #9fabb2;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding-bottom: 2.5em;
+}
+
+/*----------------------------------Devices section----*/
+.devices-section div {
+  display: flex;
+  justify-content: center;
+}
+
+.devices-section div > img {
+  padding: 1em 0 3.5em;
+  width: 100%;
+  max-width: 800px;
+}
+
+/*----------------------------------Devices section----*/
+.functions-section-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 1440px;
+  padding: 1em 0 3.5em;
+}
+
+.functions-section-content div {
+  width: 400px;
+}
+
+.functions-section-content .icon1 {
+  background-image: url("../images/icon-blacklist.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.functions-section-content .icon2 {
+  background-image: url("../images/icon-text.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.functions-section-content .icon3 {
+  background-image: url("../images/icon-preview.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 50px;
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.functions-section-content div > h3 {
+  font-size: 1.5em;
+  color: #4c545d;
+  padding-bottom: 0.5em;
+}
+
+.functions-section-content div > p {
+  font-size: 1em;
+  color: #9fabb2;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding-bottom: 2.5em;
 }
