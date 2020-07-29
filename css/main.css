@@ -8,18 +8,41 @@
 }
 
 body {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+main {
   max-width: 1440px;
+}
+
+.section-title {
+  color: #4c545d;
+  font-size: 2em;
+  padding-top: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-description {
+  color: #9fabb2;
+  font-size: 0.95em;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  padding: 1em 0 2.5em;
 }
 
 /*----------------------------------Hero section----*/
 .hero-section {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../images/bg-header-desktop.png");
-  background-repeat: no-repeat;
-  background-position: top;
+  margin: 150px 0 4em;
+  padding: 1em 0 3.5em;
 }
 
 .hero-section img {
@@ -47,7 +70,7 @@ body {
 .hero-buttons {
   display: flex;
   justify-content: space-between;
-  width: 420px;
+  flex-wrap: wrap;
 }
 
 .button-1,
@@ -62,11 +85,23 @@ body {
 .button-1 {
   background-color: #26baa4;
   box-shadow: 1px 2px #22a08d;
+  outline: none;
+  margin: 0 1em;
+}
+
+.button-1:hover {
+  background-color: #5dccbb;
 }
 
 .button-2 {
   background-color: #6173ff;
   box-shadow: 1px 2px #4b60ff;
+  outline: none;
+  margin: 0 1em;
+}
+
+.button-2:hover {
+  background-color: #8896ff;
 }
 
 /*----------------------------------Feature section----*/
@@ -77,26 +112,9 @@ body {
   justify-content: center;
 }
 
-.section-title {
-  color: #4c545d;
-  font-size: 2em;
-  padding-top: 1em;
-  font-weight: 600;
-  text-align: center;
-}
-
-.section-description {
-  color: #9fabb2;
-  font-size: 0.95em;
-  max-width: 700px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 1.6;
-  padding: 1em 0 2.5em;
-}
-
 .feature-section-content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 1em 0 3.5em;
@@ -142,9 +160,10 @@ body {
   max-width: 800px;
 }
 
-/*----------------------------------Devices section----*/
+/*----------------------------------Functions section----*/
 .functions-section-content {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   max-width: 1440px;
@@ -194,4 +213,185 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.6;
   padding-bottom: 2.5em;
+}
+
+/*---------------------------------- Clients section----*/
+.clients-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-container img {
+  max-width: 250px;
+  margin: 3em 2em;
+}
+
+/*---------------------------------- Download section----*/
+.download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 0 3.5em;
+  margin: 4em 0;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*---------------------------------- Footer----*/
+footer {
+  background-color: #f5f6f8;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+}
+
+.footer-container div {
+  margin: 0;
+}
+
+.footer-container div > img {
+  max-width: 100px;
+  width: 100%;
+}
+
+.footer-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  width: 100%;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.list-options ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+.list-options ul > li {
+  padding: 10px 20px;
+}
+
+.list-options ul > li:hover {
+  color: #26baa4;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.sm-icon {
+  display: inline-block;
+  height: 25px;
+  width: 30px;
+  border: none;
+  margin: 0 10px;
+  outline: none;
+}
+
+.sm-icon.facebook {
+  background-image: url("../images/icon-facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.sm-icon.facebook:hover {
+  filter: invert(69%) sepia(62%) saturate(475%) hue-rotate(118deg)
+    brightness(78%) contrast(97%);
+}
+
+.sm-icon.twitter {
+  background-image: url("../images/icon-twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.sm-icon.twitter:hover {
+  filter: invert(69%) sepia(62%) saturate(475%) hue-rotate(118deg)
+    brightness(78%) contrast(97%);
+}
+
+.sm-icon.instagram {
+  background-image: url("../images/icon-instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.sm-icon.instagram:hover {
+  filter: invert(69%) sepia(62%) saturate(475%) hue-rotate(118deg)
+    brightness(78%) contrast(97%);
+}
+
+.attribution {
+  font-size: 0.8em;
+}
+
+.attribution a {
+  font-size: 0.8em;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #22a08d;
+}
+
+/*---------------------------------- Responsive----*/
+@media screen and (max-width: 1080px) {
+  main,
+  .footer-container {
+    margin: 0 3em;
+  }
+
+  .feature-list-content {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container > div {
+    padding-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 560px) and (min-width: 375px) {
+  body {
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin-top: 3em;
+  }
+
+  main {
+    margin: 0 1.5em;
+  }
+
+  .footer-options-container {
+    display: block;
+    text-align: center;
+  }
+
+  .button-1,
+  .button-2 {
+    margin-bottom: 1.5em;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
 }

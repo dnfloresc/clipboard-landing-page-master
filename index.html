@@ -16,15 +16,6 @@
       href="./images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Clipboard landing page</title>
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <main>
@@ -131,7 +122,26 @@
         </div>
       </section>
 
-      <section class="clients-section"></section>
+      <section class="clients-section">
+        <div class="client-container">
+          <img src="images/logo-google.png" alt="Google logo" />
+        </div>
+        <div class="client-container">
+          <img src="images/logo-ibm.png" alt="IBM logo" />
+        </div>
+        <div class="client-container">
+          <img src="images/logo-microsoft.png" alt="Microsoft logo" />
+        </div>
+        <div class="client-container">
+          <img src="images/logo-hp.png" alt="HP logo" />
+        </div>
+        <div class="client-container">
+          <img
+            src="images/logo-vector-graphics.png"
+            alt="Vector Graphics logo"
+          />
+        </div>
+      </section>
 
       <section class="download-section">
         <h2 class="section-title">
@@ -141,42 +151,44 @@
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+        <div class="download-buttons">
+          <button class="button-1">Download for iOS</button>
+          <button class="button-2">Download for Mac</button>
         </div>
       </section>
     </main>
 
     <footer>
-      <div>
-        <img src="" alt="logo" />
-      </div>
+      <div class="footer-container">
+        <div>
+          <img src="images/logo.svg" alt="logo" />
+        </div>
 
-      <div>
-        <div>
-          <ul>
-            <li>FAQs</li>
-            <li>Contact Us</li>
-          </ul>
+        <div class="footer-options-container">
+          <div class="list-options">
+            <ul>
+              <li><a>FAQs</a></li>
+              <li><a></a>Contact Us</li>
+            </ul>
+          </div>
+          <div class="list-options">
+            <ul>
+              <li><a>Privacy Policy</a></li>
+              <li><a>Press Kit</a></li>
+            </ul>
+          </div>
+          <div class="list-options">
+            <ul>
+              <li><a>Install Guide</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <ul>
-            <li>Privacy Policy</li>
-            <li>Press Kit</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>Install Guide</li>
-          </ul>
-        </div>
-      </div>
 
-      <div>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <div class="footer-icons">
+          <a href="#" class="sm-icon facebook"></a>
+          <a href="#" class="sm-icon twitter"></a>
+          <a href="#" class="sm-icon instagram"></a>
+        </div>
       </div>
 
       <div>
@@ -184,7 +196,7 @@
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor </a
-          >. Coded by <a href="#">Your Name Here</a>.
+          >. Coded with 💕 by <a href="#">iamdulce_</a>.
         </p>
       </div>
     </footer>
