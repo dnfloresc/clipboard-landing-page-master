@@ -69,17 +69,18 @@ main {
 
 .hero-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .button-1,
 .button-2 {
-  padding: 10px 25px;
-  border-radius: 20px;
+  padding: 15px 25px;
+  border-radius: 50px;
   color: white;
   border-style: none;
   cursor: pointer;
+  width: 250px;
 }
 
 .button-1 {
@@ -87,6 +88,7 @@ main {
   box-shadow: 1px 2px #22a08d;
   outline: none;
   margin: 0 1em;
+  font-weight: 600;
 }
 
 .button-1:hover {
@@ -98,6 +100,7 @@ main {
   box-shadow: 1px 2px #4b60ff;
   outline: none;
   margin: 0 1em;
+  font-weight: 600;
 }
 
 .button-2:hover {
@@ -354,7 +357,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 680px) {
   .footer-container {
     flex-direction: column;
   }
@@ -364,7 +367,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 560px) and (min-width: 375px) {
+@media screen and (max-width: 679px) and (min-width: 376px) {
   body {
     background-image: url("../images/bg-header-mobile.png");
     background-repeat: no-repeat;
@@ -374,7 +377,7 @@ footer {
   }
 
   main {
-    margin: 0 1.5em;
+    margin: 0 1em;
   }
 
   .footer-options-container {
@@ -394,4 +397,35 @@ footer {
   .download-buttons {
     justify-content: center;
   }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container > div {
+    padding-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    font-size: 16px;
+  }
+
+  .button-1,
+  .button-2 {
+    margin-bottom: 1.5em;
+  }
+
+  .footer-options-container {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container > div {
+    padding-bottom: 1.5em;
 }
